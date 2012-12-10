@@ -23,7 +23,7 @@ describe('wat', function() {
     expect(typeof objectPlusArray).toBe('string');
   });
 
-  it ('{} + {}', function() {
+  it ('{} + {} is NaN', function() {
     var objectPlusObject = {} + {};
     // Hah! Don't understand why Wat isn't working.
     // Here's what I expect it to be:
@@ -31,6 +31,27 @@ describe('wat', function() {
     //
     // But here's what I'm seeing:
     expect(objectPlusObject).toBe('[object Object][object Object]');
+  });
+
+  it ('new Array(16) is ,,,,,,,,,,,,,,,,', function() {
+    var result = new Array(16);
+    expect(result.length).toBe(16);
+    expect(result + "").toBe(',,,,,,,,,,,,,,,');
+  });
+
+  it ('new Array(16).join("wat") is watwatwatwatwatwatwatwatwatwatwatwatwatwatwat', function() {
+    var result = new Array(16);
+    expect(result.join('wat')).toBe('watwatwatwatwatwatwatwatwatwatwatwatwatwatwat');
+  });
+
+  it ('new Array(16).join("wat" + 1) is wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1', function() {
+    var result = new Array(16);
+    expect(result.join('wat' + 1)).toBe('wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1wat1');
+  });
+
+  it ('new Array(16).join("wat" - 1) + "Batman!" is NaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!', function() {
+    var result = new Array(16);
+    expect(result.join('wat' - 1) + ' Batman!').toBe('NaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!');
   });
 
 });
