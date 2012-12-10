@@ -54,4 +54,6 @@ describe('wat', function() {
     expect(result.join('wat' - 1) + ' Batman!').toBe('NaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaN Batman!');
   });
 
+  // Next, check out: http://brendaneich.github.com/Strange-Loop-2012/#/ and
+  // http://www.infoq.com/presentations/State-JavaScript
 });
