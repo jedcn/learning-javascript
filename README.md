@@ -2,8 +2,8 @@
 
 [Jasmine](http://pivotal.github.com/jasmine/) describes itself as:
 
-    Jasmine is a behavior-driven development framework for testing JavaScript
-    code.
+> Jasmine is a behavior-driven development framework for testing JavaScript
+> code.
 
 And this is great. And Jasmine is great.
 
@@ -26,8 +26,8 @@ You don't even need to *like* JavaScript!
 
 But, if you've found yourself in a situation where you're regularly referring to
 [online introductions to JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript/A_re-introduction_to_JavaScript)
-or always mis-remembering how you use a
-[specific library](http://underscorejs.org/), then here's a way forward.
+or always forgetting how you use a [specific library](http://underscorejs.org/),
+then here's a way forward.
 
 ## A Way Forward
 
@@ -56,4 +56,5 @@ You learn about a means for taking executable notes. They are easily referenced.
 They are easily searched. They can easily be verified cross-browser.
 
 But most importantly, you start getting involved with a paradigm that can be
-helpfull regardless of the language you're working in.
+helpful regardless of the language you're working in. For example-- you can take
+the same approach in [Ruby](https://github.com/jedcn/learning-ruby).
