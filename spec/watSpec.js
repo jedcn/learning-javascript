@@ -33,6 +33,18 @@ describe('wat', function() {
     expect(objectPlusObject).toBe('[object Object][object Object]');
   });
 
+  it ('"wat" + 1 is "wat1"', function() {
+    expect('wat' + 1).toBe('wat1');
+  });
+
+  it ('"wat" - 1 is NaN', function() {
+    expect('wat' - 1).toBeNaN();
+  });
+
+  it ('NaN (not a number) is a Number', function() {
+    expect(typeof NaN).toBe('number');
+  });
+
   it ('new Array(16) is ,,,,,,,,,,,,,,,,', function() {
     var result = new Array(16);
     expect(result.length).toBe(16);
