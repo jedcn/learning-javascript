@@ -12,9 +12,9 @@ describe('wat', function() {
     expect(typeof arrayPlusObject).toBe('string');
   });
 
-  it ('{} + [] is 0', function() {
+  xit ('{} + [] is 0', function() {
     var objectPlusArray = {} + [];
-    // Hah! Don't understand why Wat isn't working.
+      // Hah! Don't understand why Wat isn't working.
     // Here's what I expect it to be:
     // expect(objectPlusArray).toBe(0);
     // expect(typeof objectPlusArray).toBe('number');
@@ -23,7 +23,7 @@ describe('wat', function() {
     expect(typeof objectPlusArray).toBe('string');
   });
 
-  it ('{} + {} is NaN', function() {
+  xit ('{} + {} is NaN', function() {
     var objectPlusObject = {} + {};
     // Hah! Don't understand why Wat isn't working.
     // Here's what I expect it to be:
