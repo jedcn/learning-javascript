@@ -1,6 +1,6 @@
 # Learning JavaScript (with Jasmine)
 
-[Jasmine](http://pivotal.github.com/jasmine/) describes itself as:
+[Jasmine](https://jasmine.github.io/) describes itself as:
 
 > Jasmine is a behavior-driven development framework for testing JavaScript
 > code.
